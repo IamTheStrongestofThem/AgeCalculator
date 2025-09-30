@@ -1,7 +1,7 @@
 use std::io;
 use std::thread::sleep;
 use std::time::Duration;
-use chrono::Datelike; // For getting the current year
+use chrono::Datelike;
 use chrono::Utc;
 
 fn main() {
@@ -21,7 +21,7 @@ fn main() {
     };
 
     println!("Calculating...");
-    sleep(Duration::from_secs(2)); // pause for 2 seconds for effect
+    sleep(Duration::from_secs(2));
 
     let current_year = Utc::now().year();
     let age = current_year - birth_year;
